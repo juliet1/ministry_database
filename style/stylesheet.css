@@ -1,0 +1,222 @@
+* {
+    font-family: Helvetica,Arial,sans-serif; 
+    font-weight: 300;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.header {
+    position: relative;
+    background-color: black;
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+    min-height: calc(99vh - 40px);
+    text-align: center;
+    position: relative;
+    
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+}
+
+#split-center {
+    align-content: left;
+    text-align: left;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    clear: left;
+    height: 1em;
+    
+}
+
+.menu, #logo, #fav-link {
+    display:inline-block;
+}
+
+#fav-link {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+
+.menu {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+}
+
+#logo {
+    height: 40px;
+    padding: 2px;
+}
+
+div.header li {
+    list-style-type: none;
+    margin: auto 1vw;
+}
+
+div.header ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height:100%;
+}
+
+div.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.small-button {
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px; 
+}
+
+.home-info-elem {
+    margin: auto;
+    margin-top: 25vh;
+    width: 300px;
+}
+
+.lhs, .rhs {
+    display: inline-block;
+    width: 43%;
+    text-align: left;
+    padding: 40px 40px 0px 40px;
+}
+
+.lhs {
+    float: left;
+    min-width: 420px;
+}
+
+.rhs {
+    clear: both;
+    line-height: 1em;
+}
+
+div.rhs .small-button {
+    margin-left: 0px;
+}
+
+#stack-center {
+    text-align: left;
+    padding: 40px;
+}
+
+.nav, .spacer {
+    height: 2em;
+}
+
+#lhs-list {
+    float: left;
+    padding: 40px;
+    padding-bottom: 0px;
+    width: 15%;
+}
+
+#rhs-list {
+    float: left;
+    width: 72%;
+    padding: 40px;
+}
+
+div.ministry-img img {
+    width: 100%;
+}
+
+.entry {
+    border-color: #e3e3e3;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.entry h2 {
+    font-size: 16px;
+}
+
+div.entry a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, serif;
+}
+
+#login-block {
+    text-align: center;
+    margin: auto;
+    margin-top: 25vh;
+    width: 300px;
+    border-color: #e3e3e3;
+    border-width: thin;
+    border-style: solid;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+}
+
+#username, #password {
+    margin: 20px auto 10px auto;
+    height: 2em;
+    min-width: 150px;
+    border: 1px solid #e3e3e3;;
+    border-radius: 4px;
+    padding-left: 10px;
+    display: block;
+    
+}
+
+div#login-block a {
+    color: gray;
+}
+
+#rhs-col, #lhs-col {
+    box-sizing:border-box;
+    width: 50%;
+    float: left;
+    padding: 40px;
+}
+
+#rhs-col {
+    padding: 40px 40px 40px 20px; 
+}
+
+#lhs-col {
+    padding: 40px 20px 40px 40px;
+}
+
+#account-title {
+    padding: 40px 0px 0px 40px;
+}

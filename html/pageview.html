@@ -2,38 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>vtONE Connect</title>
-        <link rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/style/responsive.css">
     </head>
     <body>
         <div class="header">
-            <div class="menu">
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="ministries">Ministries</a></li>
-                    <li><a href="churches">Churches</a></li>
-                </ul>
+            <!-- Collapsed Menu -->
+            <input id="menu-btn" type="image" src="/images/hamburger.png">
+            <!-- Full Menu -->
+            <div id="menu">
+                <a href="home.html">Home</a>
+                <a href="camp-listview.html">Ministries</a>
+                <a href="church-listview.html">Churches</a>
             </div>
-            <div class="logo">
-                <img src="../images/%20vtONE%20Logo%20Black%20copy.png" width="200" alt="vtONE">
-            </div>
-            <div class="title">
-                <h1>Connect</h1>
-            </div>
-            <div class="signIn">
-                <input type="button" value="Sign In">
+            <img id="logo" src="../images/Copy%20of%20Copy%20of%20vtONE%20Logo%20White.png" alt="vtONE logo">
+            <!-- Collapsed favorites button -->
+            <input id="fav-img" type="image" src="/images/heart.png">
+            <!-- Full favorites button -->
+            <div id="fav-link">
+                <a href="favorites.html">Favorites</a>
             </div>
         </div>
-        <div class="center">
-            <div class="lhs">
+        <div class="center" id="split-center">
+            <div class="page-lhs">
                 <div class="nav">
-                    <p>Ministries > Chi Alpha</p>
+                    <p><a href="ministries">Ministries</a> > Chi Alpha</p>
                 </div>
                 <div class="ministry-img">
-                    <img src="/images/chi_alpha.jpg" height="400">
+                    <img src="/images/chi_alpha.jpg" alt="A group of around 100 students lined up in rows outside in front of a building, all smiling">
                 </div>
             </div>
-            <div class="rhs">
+            <div class="page-rhs">
+                <div class="spacer"></div>
                 <div>
                     <h1>Chi Alpha</h1>
                 </div>
@@ -46,18 +47,13 @@
                     </p>
                     <h2>DESCRIPTION</h2>
                     <p>Chi Alpha (XA, short for Christ’s ambassadors: 2 Cor. 5:20) is a community devoted to Christ, fellowship, wholeness, mission, diversity, and empowerment. We have prayer meetings, social events, Bible studies, and a weekly worship service in Squires Student Center – Colonial Hall. Get connected, live for Christ, and build a strong foundation for a lifelong relationship with Him while making the best friends of your life in XA along the way!</p>
-                    <h2>MINISTRY BRANCHES</h2>
-                    <p>
-                        Large service <br>
-                        Bible Studies <br>
-                        Morning Prayer
-                    </p>
                     <h2>CONTACT</h2>
                     <p>
                         saladinoxa@gmail.com<br>
                         540.292.3233<br>
                         <a href="">Facebook</a>
                     </p>
+                    <input type="button" value="Add To Favorites" class="small-button">
                 </div>
             </div>
         </div>

@@ -2,50 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>vtONE Connect</title>
-        <link rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/style/responsive.css">
     </head>
     <body>
         <div class="header">
-            <div class="menu">
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="ministries">Campus Ministries</a></li>
-                    <li><a href="churches">Churches</a></li>
-                </ul>
+            <!-- Collapsed menu -->
+            <input id="menu-btn" type="image" src="/images/hamburger.png"> 
+            <!-- Full menu -->
+            <div id="menu">
+                <a href="home.html">Home</a>
+                <a href="camp-listview.html">Ministries</a>
+                <a href="church-listview.html">Churches</a>
             </div>
-            <div class="logo">
-                <img src="../images/%20vtONE%20Logo%20Black%20copy.png" width="200" alt="vtONE">
-            </div>
-            <div class="title">
-                <h1>Connect</h1>
-            </div>
-            <div class="signIn">
-                <input type="button" value="Sign In">
+            <img id="logo" src="../images/Copy%20of%20Copy%20of%20vtONE%20Logo%20White.png" alt="vtONE logo">
+            <!-- Collapsed favorites button -->
+            <input id="fav-img" type="image" src="/images/heart.png"> 
+            <!-- Full favorites button -->
+            <div id="fav-link">   
+                <a href="favorites.html">Favorites</a>
             </div>
         </div>
-        <div class="center">
-            <div>
+            <div id="lhs-list">
                 <h1>Churches</h1>
             </div>
             <div>
+            <div id="rhs-list">
+                <input class="small-button" type="button" value="Filters">
                 <div>
-                    <input type="button" value="Filters">
-                </div>
-                <div class="list-scroller">
-                    <div>
-                        <div class="entry">
-                            <h1>Grace Covenant Presbyterian Church</h1>
-                            <h2>Blacksburg</h2>
-                            <h2>PCA/Presbyterian</h2>
-                            <p>We are a group of people who have come to love the Gospel of Jesus Christ and want everything we do to reflect this Gospel. We want to be a church which not only loves the Truth as found in the Bible, but which also truly loves God and one another.</p>
-                        </div>
-                        <div class="entry">
-                            <h1>Fireplace</h1>
-                            <h2>Blacksburg</h2>
-                            <h2>Assemblies of God/Pentecostal</h2>
-                            <p>Fireplace Church cares about one thing more than anything else—devotion to Jesus Christ. We are a family of individuals that have found hope in Jesus and simply want as many people as possible to experience that exact same freedom.</p>
-                        </div>
+                    <div class="entry">
+                        <h1>Grace Covenant Presbyterian Church</h1>
+                        <h2>Blacksburg</h2>
+                        <h2>PCA/Presbyterian</h2>
+                        <p>We are a group of people who have come to love the Gospel of Jesus Christ and want everything we do to reflect this Gospel. We want to be a church which not only loves the Truth as found in the Bible, but which also truly loves God and one another.</p>
+                    </div>
+                    <div class="entry">
+                        <h1>Fireplace</h1>
+                        <h2>Blacksburg</h2>
+                        <h2>Assemblies of God/Pentecostal</h2>
+                        <p>Fireplace Church cares about one thing more than anything else—devotion to Jesus Christ. We are a family of individuals that have found hope in Jesus and simply want as many people as possible to experience that exact same freedom.</p>
                     </div>
                 </div>
             </div>
