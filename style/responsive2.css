@@ -1,0 +1,382 @@
+* {
+    font-family: Helvetica,Arial,sans-serif; 
+    font-weight: 300;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.header {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 48px;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    clear: left;
+    height: 1em;
+}
+
+.center {
+    margin: 0 auto;
+    min-height: calc(99vh - 40px);
+    text-align: center;
+    position: relative;
+
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+}
+
+/* Navigation bar elements */
+#logo {
+    height: 35px;
+    padding: 4px 0px 4px 10px;
+}
+
+#menu-btn {
+    float: left;
+    height: 20px;
+    margin: 15px 0px 0px 15px;
+}
+
+#search-bar {
+    height: 20px;
+    min-width: 20em;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#search-form {
+    float: right;
+    height: 100%;
+    background-color: black;
+    width: auto;
+}
+
+#search-form-hid {    
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: lightgray;
+    height: 3em;
+    text-align: right;
+    right: 0;
+}
+
+#search-btn {
+    margin: auto;
+}
+
+#search-small {
+    float: right;
+    height: 25px;
+    margin: 10px 10px;
+}
+
+#menu, div.entry p, div.ministry-img img, #search-form {
+    display: none;
+}
+
+#lhs-list {
+    float: left;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+#rhs-list {
+    float: left;
+    margin: 20px;
+}
+
+.entry {
+    border-color: #e3e3e3;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-top: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.entry h2 {
+    font-size: 16px;
+}
+
+div.entry a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, serif;
+}
+
+.page-lhs, .page-rhs {
+    display: inline-block;
+    text-align: left;
+    padding: 20px 20px 0px 20px;
+}
+
+.page-lhs {
+    float: left;
+}
+
+.page-rhs {
+    clear: both;
+    line-height: 1em;
+}
+
+/* Form Elements */ 
+#entry-name, #website, #day, #time, #location, #email, #description {
+    display: block;
+    height: 2em;
+    width: 15em;
+    margin: 10px 0px 10px 0px;
+}
+
+div.page-rhs label {
+    display: block;
+}
+
+#time {
+    width: 60px;
+    display: inline;
+}
+
+#day {
+    width: 10em;
+    display:inline;
+}
+
+#location {
+    display: inline;
+}
+
+#description {
+    width: 100%;
+    height: 4em;
+}
+
+.home-info-elem {
+    margin: auto;
+    margin-top: 25vh;
+    width: 300px;
+}
+
+#split-center {
+    text-align: left;
+}
+
+/* Login screen elements */
+#login-block {
+    text-align: center;
+    margin: auto;
+    margin-top: 25vh;
+    width: 300px;
+    border-color: #e3e3e3;
+    border-width: thin;
+    border-style: solid;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+}
+
+div#login-block a {
+    color: gray;
+}
+
+#username, #password {
+    margin: 20px auto 10px auto;
+    height: 2em;
+    min-width: 150px;
+    border: 1px solid #e3e3e3;;
+    border-radius: 4px;
+    padding-left: 10px;
+    display: block;
+}
+
+/* Account/favorites page items */
+#acct-rhs, #acct-lhs {
+    box-sizing:border-box;
+    float: left;
+    padding: 20px;
+    width: 100%;
+}
+
+#acct-lhs {
+    padding-top: 0;
+}
+
+#account-title {
+    padding: 20px 0px 0px 20px;
+}
+
+.small-button {
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+#drop-menu {
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: #181818;
+    border-radius: 0px 0px 4px 4px;
+    height: auto;
+    text-align: left;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#drop-menu a {
+    background-color: #181818;
+    margin: 1em;
+}
+
+div.header a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    margin-top: 1em;
+}
+
+div#drop-menu a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media all and (min-width: 912px) {
+    #menu-btn, #search-small  {
+        display: none;
+    }
+    
+    #logo {   
+        float: left;
+    }
+    
+    #search-form {
+        display: inline-block;
+    }
+    
+    #menu {
+        display: inline-block;
+        float: left;
+        height: 100%;
+        margin-left: 20px;
+    }
+    
+    div.header a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        margin-top: 1em;
+    }
+    
+    div#menu a {
+        margin-left: 10px;
+    }
+    
+    #drop-menu, #search-form-hid {
+        visibility: hidden;
+    }
+}
+
+/** Non-phone view styles **/
+@media all and (min-width: 768px) {
+    .page-lhs, .page-rhs {
+        display: inline-block;
+        width: 43%;
+        padding: 40px 40px 0px 40px;
+    }
+
+    .page-lhs {
+        min-width: 420px;
+    }
+
+    div.rhs .small-button {
+        margin-left: 0;
+    }
+
+    #stack-center {
+        text-align: left;
+        padding: 40px;
+    }
+
+    .nav, .spacer {
+        height: 2em;
+    }
+
+    #lhs-list {
+        margin: 40px;
+        width: 15%;
+    }
+
+    #rhs-list {
+        width: 72%;
+        margin: 40px;
+    }
+
+    div.ministry-img img {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    
+    div.upload-img {
+        border-width: medium;
+        border-color: lightgray;
+        background-color: lightgray;
+        border-radius: 8px;
+        height: 20em;
+        width: 30em;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 20em;
+
+    }
+    
+    div.entry p {
+        display: inline;
+    }
+
+    #acct-rhs, #acct-lhs {
+        width: 50%;
+    }
+
+    #acct-rhs {
+        padding: 20px 40px 40px 20px; 
+    }
+
+    #acct-lhs {
+        padding: 20px 20px 40px 40px;
+    }
+
+    #account-title {
+        padding: 40px 0px 0px 40px;
+    }    
+}
