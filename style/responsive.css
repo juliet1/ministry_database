@@ -45,16 +45,6 @@ h1, h2, h3 {
     border-style: solid;
 }
 
-.small-button {
-    width: auto;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 14px; 
-}
-
 /* Navigation bar elements */
 #logo {
     height: 40px;
@@ -67,10 +57,27 @@ h1, h2, h3 {
     margin: 15px 0px 0px 15px;
 }
 
+#search-bar {
+    position: absolute;
+    right: 150px;
+    height: 20px;
+    margin: 15px 15px; 
+}
+
+#search-form {
+    float: right;
+}
+
 #fav-img {
     float: right;
     height: 20px;
     margin: 15px 15px;
+}
+
+#search-btn {
+    position: absolute;
+    right: 100px;
+    margin-top: 10px;
 }
 
 #menu, #fav-link, div.entry p, div.ministry-img img {
@@ -125,6 +132,37 @@ div.entry a {
     line-height: 1em;
 }
 
+/* Form Elements */ 
+#entry-name, #website, #day, #time, #location, #email, #description {
+    display: block;
+    height: 2em;
+    width: 15em;
+    margin: 10px 0px 10px 0px;
+}
+
+div.page-rhs label {
+    display: block;
+}
+
+#time {
+    width: 60px;
+    display: inline;
+}
+
+#day {
+    width: 10em;
+    display:inline;
+}
+
+#location {
+    display: inline;
+}
+
+#description {
+    width: 100%;
+    height: 4em;
+}
+
 .home-info-elem {
     margin: auto;
     margin-top: 25vh;
@@ -132,7 +170,6 @@ div.entry a {
 }
 
 #split-center {
-    align-content: left;
     text-align: left;
 }
 
@@ -179,20 +216,41 @@ div#login-block a {
     padding: 20px 0px 0px 20px;
 }
 
+.small-button {
+    width: auto;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px; 
+}
+
+#drop-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: black;
+    height: 8em;
+    text-align: left;
+    left: 0px;
+}
+
+div.header a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    margin-top: 1em;
+}
+
+div#drop-menu a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /** Non-phone view styles **/
-@media all and (min-width: 376px) {    
-    div.header li {
-        list-style-type: none;
-        margin: auto 1vw;
-    }
-
-    div.header ul {
-        padding: 0px;
-        margin: 0px;
-        display: flex;
-        height:100%;
-    }
-
+@media all and (min-width: 768px) {
     .page-lhs, .page-rhs {
         display: inline-block;
         width: 43%;
@@ -224,13 +282,25 @@ div#login-block a {
     #rhs-list {
         width: 72%;
         margin: 40px;
-        margin-top: 0px;
     }
 
     div.ministry-img img {
         display: block;
         width: 100%;
         padding: 0px;
+    }
+    
+    div.upload-img {
+        border-width: medium;
+        border-color: lightgray;
+        background-color: lightgray;
+        border-radius: 8px;
+        height: 20em;
+        width: 30em;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 20em;
+
     }
     
     div.entry p {
@@ -252,9 +322,7 @@ div#login-block a {
     #account-title {
         padding: 40px 0px 0px 40px;
     }
-}
-/** Uncollapse the buttons once the elements don't overlap **/
-@media all and (min-width: 580px) {
+
     #fav-img, #menu-btn  {
         display: none;
     }
@@ -271,6 +339,7 @@ div#login-block a {
     
     #menu {
         left: 0px;
+        top: 0px;
     }
     
     div.header a {
@@ -287,4 +356,9 @@ div#login-block a {
     div#menu a {
         margin-left: 10px;
     }
+    
+    #drop-menu {
+        visibility: hidden;
+    }
+    
 }
