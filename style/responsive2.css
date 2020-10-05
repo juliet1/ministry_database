@@ -59,9 +59,8 @@ h1, h2, h3 {
     margin: 15px 0px 0px 15px;
 }
 
-#search-bar {
+#search-bar, #search-bar-hid {
     height: 20px;
-    min-width: 20em;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -77,14 +76,16 @@ h1, h2, h3 {
     display: none;
     position: absolute;
     top: 48px;
-    background-color: lightgray;
+    background-color: #181818;
     height: 3em;
     text-align: right;
     right: 0;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
 }
 
-#search-btn {
-    margin: auto;
+#search-btn, #search-btn-hid {
+    background-color: transparent;
 }
 
 #search-small {
@@ -145,6 +146,21 @@ div.entry a {
     line-height: 1em;
 }
 
+#fav-btn {
+    height: 20px;
+    float: right;
+    margin-top: 20px;
+}
+
+div.page-rhs h1 {
+    display: inline-block;
+}
+
+div.page-rhs p {
+    line-height: 1.1em;
+}
+
+
 /* Form Elements */ 
 #entry-name, #website, #day, #time, #location, #email, #description {
     display: block;
@@ -153,12 +169,29 @@ div.entry a {
     margin: 10px 0px 10px 0px;
 }
 
+.error {
+    display: block;
+    border-radius: 2px;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    height: 2em;
+    width: 15em;
+    margin: 10px 0px 10px 0px;
+}
+
+.error-text {
+    color: red;
+    font-size: 10px;
+    line-height: 1em;
+}
+
 div.page-rhs label {
     display: block;
 }
 
 #time {
-    width: 60px;
+    width: 100px;
     display: inline;
 }
 
@@ -176,10 +209,14 @@ div.page-rhs label {
     height: 4em;
 }
 
-.home-info-elem {
+.info-elem {
     margin: auto;
     margin-top: 25vh;
     width: 300px;
+}
+
+#confirm {
+    width: auto;
 }
 
 #split-center {
@@ -378,5 +415,9 @@ div#drop-menu a {
 
     #account-title {
         padding: 40px 0px 0px 40px;
-    }    
+    }
+
+    #search-bar {
+        min-width: 20em;
+    }
 }

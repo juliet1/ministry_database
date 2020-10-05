@@ -4,32 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>vtONE Connect</title>
-        <script src="../scripts/jquery-3.5.1.min.js"></script>
-        <script src="../scripts/behavior.js"></script>
-        <link rel="stylesheet" type="text/css" href="../style/responsive2.css">
+        <script src="scripts/jquery-3.5.1.min.js"></script>
+        <script src="scripts/behavior.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/responsive2.css">
     </head>
     <body>
         <div class="header">
-            <img id="logo" src="../images/Copy%20of%20Copy%20of%20vtONE%20Logo%20White.png" alt="vtONE logo. Credit: vtone.org">
+            <img id="logo" src="images/Copy%20of%20Copy%20of%20vtONE%20Logo%20White.png" alt="vtONE logo. Credit: vtone.org">
             <!-- Collapsed menu -->
-            <input id="menu-btn" type="image" class="closed" src="../images/closed.png" alt="Menu button for dropdown that includes home, campus ministries, and churches links. Credit: noun project">
+            <input id="menu-btn" type="image" class="closed" src="images/closed.png" alt="Menu button for dropdown that includes home, campus ministries, and churches links. Credit: noun project">
             <!-- Full menu -->
             <div id="menu">
-                <a href="home.html">Home</a>
-                <a href="camp-listview.html">Campus Ministries</a>
-                <a href="church-listview.html">Churches</a>
+                <a href="index.html">Home</a>
+                <a href="list_campus.html">Campus Ministries</a>
+                <a href="list_church.html">Churches</a>
                 <a href="favorites.html">Favorites</a>
             </div>
             <!-- Search bar form -->
-            <input id="search-small" type="image" src="../images/search.png">
-            <form id="search-form" class="shown">
-                <input id="search-bar" type="text" alt="Search bar to find either campus ministries or churches">
-                <input id="search-btn" class="small-button" type="submit"  alt="Button to search site for contents of search bar"> 
+            <input id="search-small" type="image" src="images/search.png" alt="display drop down search bar">
+            <form action="search-results.html" method="get" id="search-form" class="shown">
+                <input name="search-term" id="search-bar" type="text" placeholder="Try searching 'chi alpha'">
+                <input name="submit" id="search-btn" class="small-button" value="Search" type="submit">
             </form> 
             <!-- Search bar drop down form -->
-            <form id="search-form-hid" class="shown">
-                <input id="search-bar" type="text" alt="Search bar to find either campus ministries or churches">
-                <input id="search-btn" class="small-button" type="submit"  alt="Button to search site for contents of search bar"> 
+            <form action="search-results.html" method="get" id="search-form-hid" class="shown">
+                <input name="search-term" id="search-bar-hid" type="text" placeholder="Try searching 'chi alpha'">
+                <input name="submit" id="search-btn-hid" class="small-button" value="Search" type="submit">
             </form>
         </div>
         <div class="center" id="split-center">
@@ -39,7 +39,7 @@
             <div id="acct-lhs">
                 <h2>Campus Ministries</h2>
                 <div class="entry">
-                    <h1><a href="pageview.html">Chi Alpha</a></h1>
+                    <h1><a href="details.html">Chi Alpha</a></h1>
                     <h2>8pm Wednesdays, Squires Colonial</h2>
                 </div>
                 <div class="entry">

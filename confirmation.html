@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>vtONE Connect</title>
+        <script src="scripts/jquery-3.5.1.min.js"></script>
+        <script src="scripts/behavior.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/responsive2.css">
+    </head>
+    <body>
+        <div class="header">
+            <img id="logo" src="images/Copy%20of%20Copy%20of%20vtONE%20Logo%20White.png" alt="vtONE logo. Credit: vtone.org">
+            <!-- Collapsed menu -->
+            <input id="menu-btn" type="image" class="closed" src="images/closed.png" alt="Menu button for dropdown that includes home, campus ministries, and churches links. Credit: noun project">
+            <!-- Full menu -->
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="list_campus.html">Campus Ministries</a>
+                <a href="list_church.html">Churches</a>
+                <a href="favorites.html">Favorites</a>
+            </div>
+            <!-- Search bar form -->
+            <input id="search-small" type="image" src="images/search.png" alt="display drop down search bar">
+            <form action="search-results.html" method="get" id="search-form" class="shown">
+                <input name="search-term" id="search-bar" type="text" placeholder="Try searching 'chi alpha'">
+                <input name="submit" id="search-btn" class="small-button" type="submit" value="Search">
+            </form>
+            <!-- Search bar drop down form -->
+            <form action="search-results.html" method="get" id="search-form-hid" class="shown">
+                <input name="search-term" id="search-bar-hid" type="text" placeholder="Try searching 'chi alpha'">
+                <input name="submit" id="search-btn-hid" class="small-button" type="submit" value="Search">
+            </form>
+
+        </div>
+        <div class="center">
+            <div class="info-elem" id="confirm">
+                <h2>Your ministry's information has been submitted</h2>
+                <p>The page will be accessible once it is approved by an admin.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="vtone">vtONE</a> | &copy; 2020 vtONE</p>
+        </div>
+    </body>
+</html>
